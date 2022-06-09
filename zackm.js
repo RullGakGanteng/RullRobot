@@ -749,9 +749,9 @@ sourceUrl: rurl
 const zckmn = await fetchJson("https://ZackMans.github.io/database/zackbotmans.json")
 const ceknyai = require('./package.json').version
 if (zckmn.update === ceknyai) {
-cekbotinfo = `NagatoroBot`
+cekbotinfo = `Nagatoro bot yang di buat oleh Rull`
 } else {
-cekbotinfo = `Nagatoro Bot By Rull`
+cekbotinfo = `Nagatoro Bot Yang di Buat Oleh Rull`
 }
 
 let getjson = await mans.query({
@@ -764,9 +764,10 @@ to: "@g.us"
 content: [{ tag: "invite", attrs: { code: "KEDT4a47m1Q0A5yATttez0" } }]
 })
 let thnsto = getjson.content[0].content[0].content[0].content ? getjson.content[0].content[0].content[0].content.toString() : 'undefined'
-et cBandwidth = await checkBandwidth()
+let cBandwidth = await checkBandwidth()
 let prefs = ` ▸ ${prefix}`
 const listmn = `*ROBOT WHATSAPP MULTI DEVICE*
+_Script By MyMans APIs - X - ZackMans Official_
 
 ${cekbotinfo}
 
@@ -988,7 +989,7 @@ const templateButtons = [
 {index: 1, urlButton: {displayText: 'Group Whatsapp', url: linkgrupss}}
 ]
 const templateMessage = {
-video:fs.readFileSync(""),
+video:fs.readFileSync("./media/video/mans.mp4"),
 gifPlayback:true,
 jpegThumbnail:log0,
 caption: listmn,
