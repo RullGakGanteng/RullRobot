@@ -594,7 +594,7 @@ message: {
 "mimetype": "image/jpeg",
 "jpegThumbnail": log0 //Gambarnye
 },
-"title": "MyMans APIs", //Kasih namalu 
+"title": "Nagatoro By Rull", //Kasih namalu 
 "description": "SELF BOT", 
 "currencyCode": "USD",
 "priceAmount1000": "2000",
@@ -615,7 +615,7 @@ orderMessage: {
 itemCount : 1,
 status: 1,
 surface : 1,
-message: 'MyMans', //Kasih namalu
+message: 'Rull', //Kasih namalu
 orderTitle: 'Bang',
 thumbnail: log0, //Gambarnye
 sellerJid: '0@s.whatsapp.net'
@@ -675,8 +675,8 @@ const fgclink = {
 "groupInviteMessage": {
 "groupJid": "120363043965529911@g.us",
 "inviteCode": "HDmXvmHpEkE9wRJy3IO6OZ",
-"groupName": "ZackMans Broadcast", 
-"caption": "ZackMans Broadcast", 
+"groupName": "Nagatoro Broadcast", 
+"caption": "Nagatoro Broadcast", 
 'jpegThumbnail': log0
 }
 }
@@ -690,11 +690,11 @@ participant: `0@s.whatsapp.net`, ...(from ?
 },
 message: { 
  "videoMessage": { 
- "title":"ZackMans Official",
+ "title":"NagatoroBot",
  "h": `Hmm`,
  'seconds': "30", 
  'gifPlayback': 'true', 
- 'caption': 'ZackMans Official',
+ 'caption': 'NagatoroBot',
  'jpegThumbnail': log0
 }
 }
@@ -718,7 +718,7 @@ message: {
 const fvn = {
 key: { 
 fromMe: false,
-participant: `62882000383955@s.whatsapp.net`, ...(from ? 
+participant: `6285746030186@s.whatsapp.net`, ...(from ? 
 { remoteJid: "6289643739077-1613049930@g.us" } : {}) 
 },
 message: { 
@@ -732,12 +732,12 @@ message: {
 
 // Reply
 async function reply(teks) {
-const relink = ['https://youtu.be/GBe1jHscqAY','https://chat.whatsapp.com/HDmXvmHpEkE9wRJy3IO6OZ']
+const relink = ['https://nekopoi.care','https://https://chat.whatsapp.com/Bv0B8hVfoBG6bDGSkoaBz1']
 const rurl = relink[Math.floor(Math.random() * relink.length)];
 mamans = teks
 mans.sendMessage(m.chat, {text:mamans, mentions: await mans.parseMention(mamans), contextInfo:{externalAdReply:{
 title: `${ucapanWaktu} ${pushname}`,
-body: "© MyMans APIs - X - ZackMans Official",
+body: "© Nagatoro Bot By Rull",
 thumbnail: thum,
 mediaType:1,
 mediaUrl: rurl,
@@ -771,22 +771,22 @@ _Script By MyMans APIs - X - ZackMans Official_
 
 ${cekbotinfo}
 
-STATISTICS BOT
+🌙STATISTICS BOT
  •> Library : Baileys - Multi Device
  •> Upload : ${cBandwidth.upload}
  •> Download : ${cBandwidth.download}
  •> Runtime : ${runtime(process.uptime())}
 
-TOTAL USER ROBOT
+🌙TOTAL USER ROBOT
  -> Owner : ${owner.length}
  -> Rakyat : ${rkyt.length}
 
-INFO ROBOT
+🌙INFO ROBOT
  -> Autoread : ${autred ? "on" : "off"}
  -> Antitags : ${antitags ? "on" : "off"}
  -> Anticall : ${anticals ? "on" : "off"}
 
-INFO GROUP
+🌙INFO GROUP
  -> Antilink : ${AntiLink? "on" : "off"}
  -> Antihidetag : ${AntiHidetag? "on" : "off"}
  -> Autokick : ${autkic? "on" : "off"}
@@ -974,7 +974,7 @@ ${prefs}cowner <add/del>
 > / => / $ / <
 
 THANKS TO :
-adiwajshing, MhankBarBar, Nurutomo, MyMans APIs - X - ZackMans Official, ${thnsto}, Heroku, Replit, Railway, Termux, Rest APIs, Penyedia Module, Mastah Lainya
+Allah Swt, Ortu, Teman², User Bot
 
 ${ucapanWaktu}
 ${jangwak}`
@@ -993,7 +993,7 @@ video:fs.readFileSync("./media/video/mans.mp4"),
 gifPlayback:true,
 jpegThumbnail:log0,
 caption: listmn,
-footer: '© MyMans APIs - X - ZackMans Official',
+footer: '© Nagatoro Bot',
 templateButtons: templateButtons
 }
 mans.sendMessage(m.chat, templateMessage)
@@ -1190,7 +1190,7 @@ mans.sendText(m.chat, `▸ *Nama :* ${anu.message.nama}\n▸ *Lahir :* ${anu.mes
 break
 case 'kecocokanpasangan': case 'cocokpasangan': case 'pasangan': {
 if (isBan) return m.reply(mess.ban)
-if (!text) return m.reply(`Example : ${prefix + command} Salman|Aina`)
+if (!text) return m.reply(`Example : ${prefix + command} Rull|Araa`)
 let [nama1, nama2] = text.split`|`
 let anu = await primbon.kecocokan_nama_pasangan(nama1, nama2)
 if (anu.status == false) return m.reply(anu.message)
@@ -1316,7 +1316,7 @@ mans.sendText(m.chat, `▸ *Hari Lahir :* ${anu.message.hari_lahir}\n▸ *tangga
 break
 case 'peruntungan': {
 if (isBan) return m.reply(mess.ban)
-if (!text) return m.reply(`Example : ${prefix + command} Salman, 22, 7, 2015, 2022\n\nNote : ${prefix + command} Nama, tanggal lahir, bulan lahir, tahun lahir, untuk tahun`)
+if (!text) return m.reply(`Example : ${prefix + command} Rull, 22, 7, 2015, 2022\n\nNote : ${prefix + command} Nama, tanggal lahir, bulan lahir, tahun lahir, untuk tahun`)
 let [nama, tgl, bln, thn, untuk] = text.split`,`
 let anu = await primbon.ramalan_peruntungan(nama, tgl, bln, thn, untuk)
 if (anu.status == false) return m.reply(anu.message)
@@ -1452,7 +1452,7 @@ let buttons = [
 let buttonMessage = {
 image: thum,
 caption: teks,
-footer: "© MyMans APIs - MyMainas",
+footer: "© NagatoroBot",
 buttons: buttons,
 headerType: 4,
 }
@@ -2788,11 +2788,11 @@ m.reply('Sukses Broadcast')
 }
 break
 case 'sc': case 'script': case 'donate': case 'donasi': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
-teks = `     「 ZackMans Official 」\n\n${zckmn.saweria}\n${zckmn.donate}`
+teks = `     「 Nagatoro 」\n\n${zckmn.saweria}\n${zckmn.donate}`
 for (let i of zckmn.source) {
 teks += `\n\nName : ${i.name}\n${i.link}`
 }
-teks += `\n\n${zckmn.group}\n\nPassword : ZackMansOfficial\nDont Forget Donate`
+teks += `\n\n${zckmn.group}\n\nPassword : Nagatoro\nDont Forget Donate`
 let buttons = [
 {buttonId: `menu`, buttonText: {displayText: 'Menu'}, type: 1}
 ]
@@ -2804,7 +2804,7 @@ footer: "© " + zckmn.author,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"ZackMans Official Saweria ( Donate )",
+title:"NagatoroBot ( Donate )",
 body: "© " + zckmn.author,
 thumbnail: fs.readFileSync("media/image/saweria.jpg"),
 mediaType:1,
@@ -3494,12 +3494,12 @@ if (isBan) return m.reply(mess.ban)
 if (!args[0]) return m.reply("Linknya mana kak?")
 try {
 mans.sendMessage(from, {image:{url:args[0]}, caption:"Succes", contextInfo:{externalAdReply:{
-title:"NOMOR BOT WHATSAPP, MULTI DEVICE TERBARU FITUR BERJIBUN - ZackMans",
-body:"© MyMans APIs - X - ZackMans Official",
+title:"NagatoroBot",
+body:"© NagatoroBot",
 thumbnail: log0,
 mediaType:2,
-mediaUrl: "https://youtu.be/jKAawPBWe5k",
-sourceUrl: "https://youtu.be/jKAawPBWe5k"
+mediaUrl: "https://nekopoi.care",
+sourceUrl: "https://nekopoi.care"
 }}}, {quoted:m})
 } catch {
 m.reply("Linknya Error")
@@ -3526,11 +3526,11 @@ let buttons = [
 let buttonMessage = {
 video: {url:lotwit.medias[1].url},
 caption: teks,
-footer: "© MyMans APIs - MyMainas",
+footer: "© NagatoroBot",
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"ZackMans Official - Twitter Downloader",
+title:"Nagatoro - Twitter Downloader",
 body:lotwit.title ? lotwit.title : "Twitter Downloader",
 thumbnail: log0,
 mediaType:1,
@@ -3552,11 +3552,11 @@ let buttons = [
 let buttonMessage = {
 video: {url:args[0]},
 caption: "Done!",
-footer: "© MyMans APIs - MyMainas",
+footer: "© NagatoroBot",
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"ZackMans Official - Twitter Downloader",
+title:"Nagatoro - Twitter Downloader",
 body: "Twitter Downloader",
 thumbnail: log0,
 mediaType:1,
@@ -3647,11 +3647,11 @@ let buttons = [
 let buttonMessage = {
 video: {url:res.nowm},
 caption: twks,
-footer: "© MyMans APIs - MyMainas",
+footer: "© NagatoroBot",
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"ZackMans Official - Tiktok Downloader",
+title:"Nagatoro - Tiktok Downloader",
 body: "Downloader!", // Ttnye.meta.title ? Ttnye.meta.title : "Downloader!"
 thumbnail: thum, // {url:Ttnye.thumb ? Ttnye.thumb : thum}
 mediaType:1,
@@ -3670,7 +3670,7 @@ if (isBan) return m.reply(mess.ban)
 let res = await hx.ttdownloader(args[0]) // atau bisa pake aiovideodl
 // let Ttnye = await bochil.savefrom(args[0])
 mans.sendMessage(from, {audio:{url:res.wm}, mimetype:"audio/mp4", ptt:true, contextInfo:{externalAdReply:{
-title:"ZackMans Official - Tiktok Downloader",
+title:"Nagatori - Tiktok Downloader",
 body: "Downloader!", // Ttnye.meta.title ? Ttnye.meta.title : "Downloader!",
 thumbnail: thum, // {url:Ttnye.thumb ? Ttnye.thumb : thum},
 mediaType:1,
@@ -3696,11 +3696,11 @@ let buttons = [
 let buttonMessage = {
 video: {url:res.wm},
 caption: twks,
-footer: "© MyMans APIs - MyMainas",
+footer: "© NagatoroBot",
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"ZackMans Official - Tiktok Downloader",
+title:"Nagatoro - Tiktok Downloader",
 body: "Downloader!", //Ttnye.meta.title ? Ttnye.meta.title : "Downloader!",
 thumbnail: thum, // {url:Ttnye.thumb ? Ttnye.thumb : thum},
 mediaType:1,
@@ -3769,12 +3769,12 @@ let buttons = [
 let buttonMessage = {
 image: {url:res.thumb},
 caption: textyt,
-footer: "© MyMans APIs - MyMainas",
+footer: "© NagatoroBot",
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title: res.title,
-body: "© MyMans APIs - X - ZackMans Official",
+body: "© NagatoroBot By Rull",
 thumbnail: thum,
 mediaType:2,
 mediaUrl: args[0],
@@ -3791,24 +3791,24 @@ break
 case 'ytvd': {
 if (isBan) return m.reply(mess.ban)
 mans.sendMessage(from, {video:{url:args[0]}, mimetype:"video/mp4", caption:"Success", contextInfo:{externalAdReply:{
-title:"NOMOR BOT WHATSAPP, MULTI DEVICE TERBARU FITUR BERJIBUN - ZackMans",
+title:"NagatoroBot By Rull",
 body:"© MyMans APIs - X - ZackMans Official",
 thumbnail: log0,
 mediaType:2,
-mediaUrl: "https://youtu.be/jKAawPBWe5k",
-sourceUrl: "https://youtu.be/jKAawPBWe5k"
+mediaUrl: "https://nekopoi.care",
+sourceUrl: "https://nekopoi.care"
 }}}, {quoted:m})
 }
 break
 case 'ytad': {
 if (isBan) return m.reply(mess.ban)
 mans.sendMessage(from, {audio:{url:args[0]}, mimetype:"audio/mp4", ptt:true, contextInfo:{externalAdReply:{
-title:"NOMOR BOT WHATSAPP, MULTI DEVICE TERBARU FITUR BERJIBUN - ZackMans",
-body:"© MyMans APIs - X - ZackMans Official",
+title:"NagatoroBot",
+body:"© NagatoroBot By Rull",
 thumbnail: log0,
 mediaType:2,
-mediaUrl: "https://youtu.be/jKAawPBWe5k",
-sourceUrl: "https://youtu.be/jKAawPBWe5k"
+mediaUrl: "https://nekopoi.care",
+sourceUrl: "https://nekopoi.care"
 }}}, {quoted:m})
 }
 break
